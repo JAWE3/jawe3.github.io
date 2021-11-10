@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c4c7200c26.js" crossorigin="anonymous"></script>
+    <script defer src="js/functions.js"></script>
+    <title>Contact (School project) - Counter Strike - Global Offensive</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <nav>
+                <div id="burger"><i class="fas fa-bars"></i></div>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                    <li><a href="teams.html">teams</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li>
+                        <a href="https://www.facebook.com/CounterStrike" title="CS:GO on Facebook" target="_blank">
+                            <i class="fab fa-facebook-square"></i>
+                        </a>
+                        <a href="https://www.instagram.com/csgo_dev/" title="CS:GO on Instagram" target="_blank">
+                            <i class="fab fa-instagram-square"></i>
+                        </a>
+                        <a href="https://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive"  title="CS:GO on Twitch" target="_blank">
+                            <i class="fab fa-twitch"></i>
+                        </a>
+                        <a href="https://twitter.com/csgo" title="CS:GO on Twitter" target="_blank">
+                            <i class="fab fa-twitter-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="hero">
+                <img src="images/bg.webp" alt="hero header img">
+                <img id="logo" src="images/csgo_logo.webp" alt="logo">
+            </div>
+        </header>
+        <main id="contact">
+            <article class="content">
+                <div>
+                    <h1>Contact Information</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta a, qui id molestias aliquam velit
+                        architecto sapiente dolore nobis. </p>
+                    <p>Amet reiciendis odio deleniti nobis tenetur unde in, consequuntur facilis corporis.</p>
+                </div>
+                <div>
+                    <h2>Contact Form</h2>
+                    <form action="svar.html" method="POST" id="formular">
+                        <label for="firstname">Firstname:</label>
+                        <input type="text" name="firstname" id="firstname">
+                        <label for="lastname">Lastname:</label>
+                        <input type="text" name="lastname" id="lastname">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message"></textarea>
+                        <input class="submit-btn" type="submit" value="send message">
+                        <p id="errormessage"></p>
+                    </form>
+                </div>
+            </article>
+        </main>
+        <footer>
+            <h4>&copy; 2021 - Jens Andersen - All rights reserved.</h4>
+            <p>Copenhagen, Denmark (School Project - NEXT Medie København)</p>
+            <p>Official Website Blog for <a href="https://blog.counter-strike.net/" title="Official Blog CS:GO" target="_blank">CS:GO</a></p>
+        </footer>
+    </div>
+    <!-- wrapper -->
+    <script>
+        // functions for fomvalidation 
+        window.addEventListener("load", function () {
+            document.querySelector("#formular").onsubmit = valider;
+        });
+
+        var errormessage = document.querySelector("#errormessage");
+        errormessage.textContent = "Form is ready!";
+
+        function valider() {
+
+            // validering af fornavn
+            var firstname = document.querySelector("#firstname");
+            if (firstname.value == "") {
+                errormessage.textContent = "Fill out your Firstname!";
+                firstname.focus();
+                return false;
+            }
+            // validering af efternavn
+            var lastname = document.querySelector("#lastname");
+            if (lastname.value == "") {
+                errormessage.textContent = "Fill out your Lastname!";
+                lastname.focus();
+                return false;
+            }
+
+            // validering af e-mail adresse
+            var email = document.querySelector("#email");
+            var atpos = email.value.indexOf("@");
+            var dotpos = email.value.lastIndexOf(".");
+            if (atpos < 1 || dotpos < atpos + 2 || email.value.length <= dotpos + 2) {
+                errormessage.textContent = "Please fill out valid email address!";
+                email.focus();
+                return false;
+            }
+            // validering af efternavn
+            var message = document.querySelector("#message");
+            if (message.value == "") {
+                errormessage.textContent = "Write us a message!";
+                message.focus();
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+
+</html>

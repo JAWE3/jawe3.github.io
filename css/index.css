@@ -1,0 +1,144 @@
+/* FORSIDE */
+.topcards,
+.home {
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+}
+
+.topcards {
+    place-self: center;
+    grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+    padding-top: 4.75em;
+
+}
+
+.topcards,
+.mostread__list {
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+.topcards__list a {
+    width: 25%;
+}
+
+.topcards__list a:hover,
+.mostread a:hover {
+    color: #A21D1F;
+}
+
+.home {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+}
+
+.topcards__list a,
+.primary-article a,
+.mostread a,
+.secondary-article a {
+    text-decoration: none;
+    color: #000;
+}
+
+.primary-article {
+    width: 40em;
+    grid-column: 1/2;
+}
+
+.secondary-article {
+    width: 100%;
+    grid-column: 1/3;
+}
+
+.secondary-article__content {
+    max-width: 870px;
+}
+
+.primary-article p,
+.secondary-article p {
+    margin: 0.5em 0 1em;
+    font-size: 150%;
+}
+
+.primary-article h2,
+.secondary-article h2 {
+    font-size: 275%;
+    margin-top: 0.3em;
+}
+
+.primary-article h2,
+.secondary-article h2,
+.mostread h3,
+.topcards__list a {
+    font-weight: 700;
+}
+
+.mostread {
+    width: 18.5em;
+    grid-column: 2/3;
+    justify-self: end;
+}
+
+.mostread h3 {
+    color: #E30613;
+    font-size: 175%;
+    border-bottom: 2px solid #000;
+    margin-top: 0;
+}
+
+.mostread a {
+    margin: 0.9em 0;
+    font-size: 145%;
+    line-height: 1.35em;
+    display: block;
+}
+
+@media only screen and (max-width: 870px) {
+
+    .primary-article,
+    .secondary-article,
+    .mostread {
+        width: 100%;
+        justify-content: center;
+        grid-column: 1/3;
+    }
+
+    .primary-article,
+    .mostread {
+        width: 100%;
+        grid-column: 1/3;
+    }
+
+    .primary-article h2,
+    .secondary-article h2 {
+        font-size: 240%;
+        margin-top: 0.3em;
+    }
+
+    .topcards {
+        display: none;
+    }
+
+    .home {
+        margin-top: 2.75em;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(3, auto);
+        gap: 1em;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .primary-article {
+        order: 1;
+    }
+
+    .secondary-article {
+        order: 2;
+    }
+
+    .mostread {
+        order: 3;
+    }
+}

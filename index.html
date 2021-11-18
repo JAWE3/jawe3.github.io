@@ -1,42 +1,175 @@
-<!doctype html>
-<html lang="da">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Jens Andersen - Web Development - 2021</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/subscription.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <script src="js/menu.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="menu.js" defer></script>
+    <title>JAWE3 - Jens Andersen Webudvikler</title>
 </head>
 
-<body id="subscription">
+<body>
     <div class="wrapper">
         <header>
-            <nav class="greybg">
+            <nav class="bg-wrapper">
                 <div id="burger"><i class="fas fa-bars burgermenu__icon"></i></div>
                 <ul class="menu">
-                    <li><a href="https://jawe3.github.io/spilsite/" target="_blank" title="Spilsite">
-                            Game</a></li>
-                    <li><a href="https://jawe3.github.io/filmsite/" target="_blank" title="Filmsite">
-                            Movie</a></li>
-                    <li><a href="https://jawe3.github.io/avissite/" target="_blank" title="Avissite">
-                            News</a></li>
-                    <li><a href="https://steelinferno.dk/" target="_blank"
-                            title="Steel Inferno - Official Website">Band</a></li>
+                    <li><a href="https://jawe3.github.io/">JAWE3</a></li>
+                    <li><a href="#projects">Projekter</a></li>
+                    <li><a href="#about">Om mig</a></li>
+                    <li><a href="mailto: jashjemmeside@gmail.com">Kontakt</a></li>
                 </ul>
             </nav>
         </header>
-        <main class="abonnement">
-            <h2>Jens Andersen - Web Developer - Teacher <br> NEXT Medie Copenhagen</h2>
-            <p>You can see my active projects by following the links in the menu on this page. All projects are websites used in educating webdevelopers at NEXT Medie København.</p>
+        <main>
+            <div class="bg-wrapper">
+                <div class="intro">
+                    <div class="intro__text">
+                        <h1>Hej, Jeg er Jens Andersen<br>Webudvikler og faglærer</h1>
+                        <p>
+                            Jeg er uddannet webudvikler og arbejder med kodning og programmering, som faglærer på NEXT
+                            Medie i København. Jeg udvikler hjemmesider i HTML5, CSS og JavaScript. Her på siden kan du
+                            se mine igangværende projekter.
+                        </p>
+                        <a href="mailto: jashjemmeside@gmail.com" class="button">Skriv til mig</a>
+                    </div>
+                    <div class="intro__photo">
+                        <img src="images/jens-andersen-webudvikler.JPG" alt="Jens Andersen Web Developer and Teacher">
+                    </div>
+                </div>
+            </div>
+            <div id="projects" class="work">
+                <h2>Igangværende projekter</h2>
+                <section>
+                    <div class="featured">
+                        <div class="featured__img">
+                            <a href="https://steelinferno.dk/" target="_blank">
+                                <img src="images/steel-inferno-website.jpg" alt="Steel Inferno Official Website">
+                            </a>
+                        </div>
+                        <div class="featured__content">
+                            <h3>Steel Inferno - Band</h3>
+                            <p>
+                                <span class="featured__date">2021</span>
+                                <span class="featured__projecttype">Website</span>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae incidunt quo eius
+                                ducimus quam? Dolore, nobis commodi incidunt voluptatem ducimus numquam molestias.
+                            </p>
+                        </div>
+                    </div><!-- featured -->
+                    <hr>
+                </section>
+
+                <section>
+                    <div class="featured">
+                        <div class="featured__img">
+                            <a href="https://jawe3.github.io/avissite/" target="_blank">
+                                <img src="images/webavis.jpg" alt="iKobenhavn Newspaper Website">
+                            </a>
+                        </div>
+                        <div class="featured__content">
+                            <h3>iKøbenhavn - Avis</h3>
+                            <p>
+                                <span class="featured__date">2020</span>
+                                <span class="featured__projecttype">Website</span>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae incidunt quo eius
+                                ducimus quam? Dolore, nobis commodi incidunt voluptatem ducimus numquam molestias.
+                            </p>
+                        </div>
+                    </div><!-- featured -->
+                    <hr>
+                </section>
+
+                <section>
+                    <div class="featured">
+                        <div class="featured__img">
+                            <a href="https://jawe3.github.io/filmsite/" target="_blank">
+                                <img src="images/fast-n-furious-website.jpg"
+                                    alt="the Fast and the Furious Movie Website">
+                            </a>
+                        </div>
+                        <div class="featured__content">
+                            <h3>Fast and Furious - Film</h3>
+                            <p>
+                                <span class="featured__date">2020</span>
+                                <span class="featured__projecttype">Website</span>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae incidunt quo eius
+                                ducimus quam? Dolore, nobis commodi incidunt voluptatem ducimus numquam molestias.
+                            </p>
+                        </div>
+                    </div><!-- featured -->
+                    <hr>
+                </section>
+
+                <section>
+                    <div class="featured">
+                        <div class="featured__img">
+                            <a href="https://jawe3.github.io/spilsite/" target="_blank">
+                                <img src="images/counterstrike-go-website.jpg" alt="CS:GO Online Gaming Website">
+                            </a>
+                        </div>
+                        <div class="featured__content">
+                            <h3>Counter Strike - Spil</h3>
+                            <p>
+                                <span class="featured__date">2020</span>
+                                <span class="featured__projecttype">Website</span>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae incidunt quo eius
+                                ducimus quam? Dolore, nobis commodi incidunt voluptatem ducimus numquam molestias.
+                            </p>
+                        </div>
+                    </div><!-- featured -->
+                    <hr>
+                </section>
+            </div><!-- work -->
+
+            <div class="bg-wrapper">
+                <div id="about" class="work">
+                    <h2>Uddannelse og Interesser</h2>
+                    <section>
+                        <div class="featured">
+                            <div class="contentLeft">
+                                <h3>Webudvikler</h3>
+                                <em>10.okt. 2010 <span class="lodret">|</span> Roskilde Tekniske Skole</em>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus asperiores autem
+                                    maxime.</p>
+                                <p>Consectetur nisi saepe qui neque enim atque tenetur inventore deserunt sunt culpa.
+                                </p>
+                            </div>
+                            <div class="contentRight">
+                                <h3>Karrosserismed</h3>
+                                <em>20.jan. 2004 <span class="lodret">|</span> Lyngby Tekniske Skole</em>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus asperiores autem
+                                    maxime.</p>
+                                <p>Consectetur nisi saepe qui neque enim atque tenetur inventore deserunt sunt culpa.
+                                </p>
+                            </div>
+                        </div><!-- featured -->
+                    </section>
+                </div><!-- work -->
+            </div><!-- bg-wrapper -->
         </main>
         <footer>
-            <p>Contact me at: <a href="mailto:jashjemmeside@gmail.com">jashjemmeside@gmail.com</a></p>
+            <ul class="some">
+                <li><a href="https://facebook.com/jens.andersen.the.one" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="https://twitter.com/JensAndersenWeb" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="https://www.instagram.com/jens_f_andersen/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/paedagogisk-konsulent-eud/"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+            <p>Copyright &copy; 2021 - All Rights Reserved</p>
         </footer>
     </div>
-    <!-- end wrapper -->
+
 </body>
 
 </html>

@@ -34,9 +34,11 @@ img {
 .bg-wrapper {
     background-color: #EDF7FA;
 }
+
 p {
     margin-bottom: 1em;
 }
+
 /* MARGIN ZERO */
 .wrapper,
 nav,
@@ -49,7 +51,7 @@ main,
 
 .intro,
 .work {
-    max-width: 860px;
+    max-width: 800px;
 }
 
 .intro {
@@ -115,9 +117,11 @@ main,
 .featured__content h3 {
     font-size: 1.875em;
 }
-.featured__content p{
+
+.featured__content p {
     padding-top: 1em;
 }
+
 .featured__date {
     padding: 0.3em 0.7em;
     background-color: #142850;
@@ -131,15 +135,18 @@ main,
     color: #8695A4;
     font-size: 20px;
 }
+
 .contentLeft,
-.contentRight{
+.contentRight {
     background-color: #FFF;
     padding: 1em;
 }
+
 .contentLeft h3,
 .contentRight h3 {
     font-size: 1.625em;
 }
+
 .contentLeft em,
 .contentRight em {
     margin: 1em 0;
@@ -147,9 +154,11 @@ main,
     font-size: 1.125em;
     font-style: normal;
 }
+
 .contentLeft {
     margin-right: 0.5em;
 }
+
 .contentRight {
     margin-left: 0.5em;
 }
@@ -250,20 +259,72 @@ footer p {
     color: #21243D;
     margin-top: 2em;
 }
+
 .some {
     width: 480px;
     justify-content: space-evenly;
     list-style: none;
 }
-.some i{
+
+.some i {
     font-size: 32px;
     color: #21243D;
 }
 
 /************ MEDIA QUERIES **********/
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:800px) {
 
+    .intro,
+    .featured {
+        flex-direction: column-reverse;
+        justify-items: center;
+    }
 
+    .intro__photo {
+        display: inline;
+        margin: 0 auto 2em;
+    }
+
+    .intro__text,
+    .featured__content {
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 0 0.5em;
+    }
+
+    .intro__text p,
+    .intro__text h1 {
+        text-align: center;
+    }
+
+    .intro__text h1 {
+        font-size: 160%;
+    }
+
+    .intro__text .button {
+        margin: 0 auto;
+    }
+    .featured__content p {
+        max-width: 480px;
+        padding: 1em;
+    }
+    .featured__img{
+        margin: 0 auto;
+    }
+    h2,
+    h3 {
+        text-align: center;
+    }
+
+    .contentLeft,
+    .contentRight {
+        margin: 0 0 1em 0;
+    }
+
+    .some {
+        width: 100%;
+    }
     /* NAVIGATION MENU */
     nav {
         padding: 0.2em;

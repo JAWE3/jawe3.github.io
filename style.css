@@ -104,6 +104,7 @@ main,
 
 .featured__img {
     width: 245px;
+    margin-right: 0.5em;
 }
 
 .featured__img img {
@@ -112,6 +113,7 @@ main,
 
 .featured__content {
     width: 595px;
+    margin-left: 0.5em;
 }
 
 .featured__content h3 {

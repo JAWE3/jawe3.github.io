@@ -15,7 +15,7 @@ function mobilMenu() {
 		menu.style.display = "none"; 
 	}
 }
-document.querySelectorAll(".menu a").addEventListener("click", refreshPage);
+const linkClick = document.querySelectorAll(".menu a").addEventListener("click", refreshPage);
 function refreshPage(){
 	this.window.location.reload();
 }

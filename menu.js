@@ -4,6 +4,12 @@
 const menu = document.querySelector(".menu");
 const burger = document.querySelector("#burger");
 
+document.querySelectorAll('.menu a').forEach(link => {
+	link.addEventListener('click', function () {
+		location.href;
+		mobilMenu();
+	})
+});
 
 burger.addEventListener("click", function () {
 	mobilMenu();
@@ -16,10 +22,3 @@ function mobilMenu() {
 		menu.style.display = "none";
 	}
 }
-
-document.querySelectorAll('.menu a').forEach(link => {
-	link.addEventListener('click', function () {
-		location.href;
-		menu.style.display = "none";
-	})
-});

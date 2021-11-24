@@ -22,7 +22,6 @@ function mobilMenu() {
 
 
 function refreshPage(){
-
-	let href = menuLinks.getAttribute("href");
+	let href = this.getAttribute("href");
 	location.reload(href);
 }

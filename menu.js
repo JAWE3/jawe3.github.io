@@ -4,6 +4,9 @@
 const menu = document.querySelector(".menu");
 const burger = document.querySelector("#burger");
 const menuLinks = document.querySelectorAll(".menu a");
+for (let i = 0; i < menuLinks.length; i++){
+	menuLinks.addEventListener("click", refreshPage);
+}
 
 burger.addEventListener("click", function () {
 	mobilMenu();
@@ -17,12 +20,10 @@ function mobilMenu() {
 	}
 }
 
-for (let i = 0; i < menuLinks.length; i++){
-	menuLinks.addEventListener("click", refreshPage);
-}
 
 function refreshPage(){
-	if(menuLinks.getAttribute("href" == "#projects" || "#about")){
-		menuLinks.window.location.reload();
-	}	
+
+	let href = menuLinks.getAttribute("href");
+	console.log(href);
+	window.location.reload = href;
 }

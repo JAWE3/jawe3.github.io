@@ -5,7 +5,7 @@ const menu = document.querySelector(".menu");
 const burger = document.querySelector("#burger");
 document.querySelectorAll('.menu a').forEach(link => {
 	link.addEventListener('click', function(){
-		location.reload();
+		location.reload(link.location.href);
 	})
   });
 

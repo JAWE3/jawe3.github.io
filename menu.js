@@ -10,8 +10,9 @@ burger.addEventListener("click", function () {
 
 function mobilMenu() {
 	if (menu.style.display !== "flex") {
-		menu.style.display = "flex";     
+		menu.style.display = "flex";  
 	} else {
+		window.preventDefault();
 		menu.style.display = "none"; 
 	}
 }

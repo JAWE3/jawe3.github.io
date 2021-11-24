@@ -27,8 +27,8 @@ img {
 
 .wrapper {
     max-width: 1180px;
-    background-color: #FFF;
     overflow: hidden;
+    background-color: #FFF;
 }
 
 .blue-bg {
@@ -52,6 +52,7 @@ main,
 .intro,
 .work {
     max-width: 800px;
+    padding-top: 4.375em;
 }
 .intro {
     padding-bottom: 3em;

@@ -6,6 +6,7 @@ const burger = document.querySelector("#burger");
 document.querySelectorAll('.menu a').forEach(link => {
 	link.addEventListener('click', function(){
 		location.href;
+		menu.style.display = "none";
 	})
   });
 

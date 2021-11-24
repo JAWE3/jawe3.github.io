@@ -11,10 +11,11 @@ burger.addEventListener("click", function () {
 function mobilMenu() {
 	if (menu.style.display !== "flex") {
 		menu.style.display = "flex";
-		let link = document.querySelectorAll(".menu a");
-		link.addEventListener("click", function () {
-			location.href;
-		})
+		document.querySelectorAll('.menu a').forEach(link => {
+			link.addEventListener('click', function () {
+				location.href;
+			})
+		});
 	} else {
 		menu.style.display = "none";
 	}

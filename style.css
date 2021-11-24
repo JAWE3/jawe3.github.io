@@ -53,9 +53,10 @@ main,
 .work {
     max-width: 800px;
 }
-
+.navlink{
+    padding-top: 4.375em;
+}
 .intro {
-    padding-top: 7em;
     padding-bottom: 3em;
 }
 
@@ -322,7 +323,7 @@ footer p {
     .some {
         width: 100%;
     }
-    /* NAVIGATION MENU */
+    /* NAVIGATION MENU */    
     nav {
         padding: 0.2em;
         flex-direction: column;

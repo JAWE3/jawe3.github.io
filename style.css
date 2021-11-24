@@ -54,8 +54,15 @@ main,
     max-width: 800px;
     padding-top: 5.375em;
 }
-.intro {
+
+.intro,
+.work {
     padding-bottom: 3em;
+}
+
+#about,
+#projects {
+    min-height: 100vh;
 }
 
 .intro,
@@ -91,6 +98,7 @@ main,
     border-radius: 50%;
     overflow: hidden;
 }
+
 .featured {
     padding: 2em 0;
 }
@@ -299,13 +307,16 @@ footer p {
     .intro__text .button {
         margin: 0 auto;
     }
+
     .featured__content p {
         max-width: 480px;
         padding: 1em;
     }
-    .featured__img{
+
+    .featured__img {
         margin: 0 auto;
     }
+
     h2,
     h3 {
         text-align: center;
@@ -319,7 +330,8 @@ footer p {
     .some {
         width: 100%;
     }
-    /* NAVIGATION MENU */    
+
+    /* NAVIGATION MENU */
     nav {
         padding: 0.2em;
         flex-direction: column;

@@ -11,8 +11,12 @@ burger.addEventListener("click", function () {
 function mobilMenu() {
 	if (menu.style.display !== "flex") {
 		menu.style.display = "flex";
-		document.querySelectorAll(".menu a").addEventListener("click", window.location.reload()); 
 	} else {
 		menu.style.display = "none"; 
 	}
 }
+
+function refreshPage(){
+	document.querySelectorAll(".menu a").addEventListener("click", window.location.reload());
+}
+refreshPage();

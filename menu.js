@@ -16,9 +16,10 @@ function mobilMenu() {
 	}
 }
 const linkClick = document.querySelectorAll(".menu a");
-if(this.getAttribute("href" == "#projects" || "#about")){
-	refreshPage();
-}
+linkClick.addEventListener("click", refreshPage);
+
 function refreshPage(){
-	this.window.location.reload();
+	if(this.getAttribute("href" == "#projects" || "#about")){
+		this.window.location.reload();
+	}	
 }

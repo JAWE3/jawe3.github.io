@@ -7,7 +7,8 @@ const burger = document.querySelector("#burger");
 
 links.addEventListener("click", function(){
 	window.location.reload();
-})
+});
+
 
 burger.addEventListener("click", function () {
 	mobilMenu();

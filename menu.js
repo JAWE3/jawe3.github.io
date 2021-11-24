@@ -5,10 +5,9 @@ const menu = document.querySelector(".menu");
 const links = document.querySelectorAll(".menu li a");
 const burger = document.querySelector("#burger");
 
-links.addEventListener("click", function(){
-	window.location.reload();
+links.addEventListener("click", function () {
+	refresh();
 });
-
 
 burger.addEventListener("click", function () {
 	mobilMenu();
@@ -20,4 +19,8 @@ function mobilMenu() {
 	} else {
 		menu.style.display = "none"; 
 	}
+}
+
+function refresh (){
+	this.window.location.reload(true);
 }

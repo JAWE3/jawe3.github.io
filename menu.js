@@ -5,7 +5,7 @@ const menu = document.querySelector(".menu");
 const links = document.querySelectorAll(".menu li a");
 const burger = document.querySelector("#burger");
 
-links.addEventListener("click", function () {
+links.addEventListener("click", function (this) {
 	refresh();
 });
 
@@ -22,5 +22,5 @@ function mobilMenu() {
 }
 
 function refresh (){
-	this.window.location.reload();
+	window.location.reload();
 }

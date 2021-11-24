@@ -1,8 +1,9 @@
 // JavaScript Document
 "use strict";
 // burgermenu funktioner
-var menu = document.querySelector("nav ul");
-var burger = document.querySelector("#burger");
+const menu = document.querySelector(".menu");
+const burger = document.querySelector("#burger");
+
 burger.addEventListener("click", function () {
 	mobilMenu();
 });

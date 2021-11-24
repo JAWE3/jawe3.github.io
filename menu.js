@@ -15,8 +15,7 @@ function mobilMenu() {
 		menu.style.display = "none"; 
 	}
 }
-
+document.querySelectorAll(".menu a").addEventListener("click", refreshPage);
 function refreshPage(){
-	document.querySelectorAll(".menu a").addEventListener("click", window.location.reload());
+	this.window.location.reload();
 }
-refreshPage();

@@ -187,7 +187,7 @@ nav {
 
 .menu {
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     min-height: 4.375em;
     list-style: none;

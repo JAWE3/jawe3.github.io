@@ -187,7 +187,7 @@ nav {
 
 .menu {
     width: 100%;
-    justify-content: flex-;
+    justify-content: space-between;
     align-items: center;
     min-height: 4.375em;
     list-style: none;
@@ -205,11 +205,6 @@ nav {
 .menu>li:first-child {
     margin-right: auto;
 }
-
-/*.menu>li:last-child {
-    margin-left: auto;
-    width: auto;
-}*/
 
 .menu>li a {
     text-transform: uppercase;

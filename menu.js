@@ -3,6 +3,7 @@
 // burgermenu funktioner
 const menu = document.querySelector(".menu");
 const burger = document.querySelector("#burger");
+const menuLinks = document.querySelectorAll(".menu a");
 
 burger.addEventListener("click", function () {
 	mobilMenu();
@@ -15,17 +16,13 @@ function mobilMenu() {
 		menu.style.display = "none"; 
 	}
 }
-const menuLinks = document.querySelectorAll(".menu a");
-for (let i = 0; i < menuLinks.length; i++){
-	linkClicked();
-}
 
-function linkClicked() {
+for (let i = 0; i < menuLinks.length; i++){
 	menuLinks.addEventListener("click", refreshPage);
 }
 
 function refreshPage(){
 	if(menuLinks.getAttribute("href" == "#projects" || "#about")){
-		this.window.location.reload();
+		menuLinks.window.location.reload();
 	}	
 }

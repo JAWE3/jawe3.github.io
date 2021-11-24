@@ -16,7 +16,7 @@ function mobilMenu() {
 	}
 }
 const linkClick = document.querySelectorAll(".menu a");
-this.getAttribute("href" == "#projects" || "#about"){
+if(this.getAttribute("href" == "#projects" || "#about")){
 	refreshPage();
 }
 function refreshPage(){

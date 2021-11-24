@@ -55,6 +55,8 @@ main,
 }
 .navlink{
     padding-top: 4.375em;
+    height: 100vh;
+    width: 100%;
 }
 .intro {
     padding-bottom: 3em;

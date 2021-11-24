@@ -22,5 +22,5 @@ function mobilMenu() {
 }
 
 function refresh (){
-	this.window.location.reload(true);
+	this.window.location.reload();
 }

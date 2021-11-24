@@ -17,5 +17,7 @@ function mobilMenu() {
 				location.href;
 			})
 		});
+	} else {
+		menu.style.display = "none";
 	}
 }

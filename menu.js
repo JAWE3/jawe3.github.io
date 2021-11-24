@@ -15,11 +15,17 @@ function mobilMenu() {
 		menu.style.display = "none"; 
 	}
 }
-const linkClick = document.querySelectorAll(".menu a");
-linkClick.addEventListener("click", refreshPage);
+const menuLinks = document.querySelectorAll(".menu a");
+for (let i = 0; i < menuLinks.length; i++){
+	linkClicked();
+}
+
+function linkClicked() {
+	menuLinks.addEventListener("click", refreshPage);
+}
 
 function refreshPage(){
-	if(this.getAttribute("href" == "#projects" || "#about")){
+	if(menuLinks.getAttribute("href" == "#projects" || "#about")){
 		this.window.location.reload();
 	}	
 }

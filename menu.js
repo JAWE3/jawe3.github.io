@@ -13,10 +13,9 @@ function mobilMenu() {
 		menu.style.display = "flex";
 		document.querySelectorAll('.menu a').forEach(link => {
 			link.addEventListener('click', function () {
+				menu.style.display = "none";
 				location.href;
 			})
 		});
-	} else {
-		menu.style.display = "none";
 	}
 }

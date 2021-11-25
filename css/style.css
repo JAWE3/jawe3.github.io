@@ -137,7 +137,8 @@ main,
 }
 
 .contentLeft,
-.contentRight {
+.contentRight,
+.contentCenter {
     background-color: #FFF;
     padding: 1em;
 }

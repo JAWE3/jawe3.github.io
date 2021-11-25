@@ -149,7 +149,8 @@ main,
 }
 
 .contentLeft em,
-.contentRight em {
+.contentRight em,
+.contentCenter em {
     margin: 1em 0;
     display: block;
     font-size: 1.125em;

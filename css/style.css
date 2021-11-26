@@ -38,7 +38,10 @@ img {
 p {
     margin-bottom: 1em;
 }
-
+a{
+    text-decoration: none;
+    color: #FF6464;
+}
 /* MARGIN ZERO */
 .wrapper,
 nav,

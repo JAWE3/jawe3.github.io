@@ -167,7 +167,7 @@ main,
 .contentRight {
     margin-left: 0.5em;
 }
-.pdfList{
+ul.pdfList{
     margin: 0 auto;
     width: 90%;
     list-style-position: inside;

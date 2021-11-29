@@ -167,7 +167,11 @@ main,
 .contentRight {
     margin-left: 0.5em;
 }
-
+.pdfList{
+    margin: 0 auto;
+    width: 90%;
+    list-style-position: inside;
+}
 /* NAVIGATION */
 #burger {
     font-size: 250%;

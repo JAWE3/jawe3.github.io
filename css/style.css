@@ -173,6 +173,9 @@ ul.pdfList{
     list-style-position: inside;
     font-size: 90%;
 }
+ul.pdfList li ul{
+    margin-left: 10%;
+}
 /* NAVIGATION */
 #burger {
     font-size: 250%;

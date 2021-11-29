@@ -173,6 +173,9 @@ ul.pdfList{
     list-style-position: inside;
     font-size: 85%;
 }
+ul.pdfList li{
+    margin-bottom: 2em;
+}
 ul.pdfList li ul{
     margin-left: 5%;
     font-style: italic;

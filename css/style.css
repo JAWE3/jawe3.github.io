@@ -171,7 +171,7 @@ ul.pdfList{
     margin: 0 auto;
     width: 90%;
     list-style-position: inside;
-    font-size: 85%;
+    font-size: 90%;
 }
 ul.pdfList li{
     margin-bottom: 2em;
@@ -179,7 +179,7 @@ ul.pdfList li{
 ul.pdfList li ul{
     margin-left: 5%;
     font-style: italic;
-    font-size: 80%;
+    font-size: 85%;
 }
 /* NAVIGATION */
 #burger {

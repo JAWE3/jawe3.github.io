@@ -125,6 +125,7 @@ main,
 
 .featured__content p {
     padding-top: 1em;
+    padding-right: 1em;
 }
 
 .featured__date {

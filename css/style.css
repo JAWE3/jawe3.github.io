@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
-
 * {
     padding: 0;
     margin: 0;
@@ -32,17 +31,21 @@ img {
 }
 
 .blue-bg {
-    background-color: #EDF7FA;    
+    background-color: #EDF7FA;
 }
 
 p {
     margin-bottom: 1em;
 }
-a{
+
+a {
     text-decoration: none;
     color: #FF6464;
 }
+
+
 /* MARGIN ZERO */
+
 .wrapper,
 nav,
 main,
@@ -58,7 +61,7 @@ main,
     position: relative;
     padding-top: 5.375em;
     padding-bottom: 5.375em;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .intro,
@@ -66,7 +69,6 @@ main,
 .intro__text,
 .some {
     display: flex;
-
 }
 
 .intro,
@@ -167,21 +169,28 @@ main,
 .contentRight {
     margin-left: 0.5em;
 }
-ul.pdfList{
-    margin: 0 auto;
+
+ul.pdfList {
+    margin: 1em auto;
     width: 90%;
-    list-style-position: inside;
+    list-style-position: outside;
     font-size: 90%;
+    padding-left: 1em;
 }
-ul.pdfList li{
-    margin-bottom: 2em;
+
+ul.pdfList li {
+    margin: 1em 0;
 }
-ul.pdfList li ul{
+
+ul.pdfList li ul {
     margin-left: 5%;
     font-style: italic;
     font-size: 85%;
 }
+
+
 /* NAVIGATION */
+
 #burger {
     font-size: 250%;
     cursor: pointer;
@@ -235,6 +244,7 @@ nav {
     font-weight: 700;
 }
 
+
 /* ALLE KNAPPER + modifiers*/
 
 .button {
@@ -260,7 +270,9 @@ nav {
     margin: 0 auto;
 }
 
+
 /* FOOTER */
+
 footer {
     padding: 3em 0;
 }
@@ -284,20 +296,19 @@ footer p {
     color: #21243D;
 }
 
-/************ MEDIA QUERIES **********/
-@media only screen and (max-width:800px) {
 
+/************ MEDIA QUERIES **********/
+
+@media only screen and (max-width:800px) {
     .intro,
     .featured {
         flex-direction: column-reverse;
         justify-items: center;
     }
-
     .intro__photo {
         display: inline;
         margin: 0 auto 2em;
     }
-
     .intro__text,
     .featured__content {
         width: 100%;
@@ -305,55 +316,44 @@ footer p {
         margin: 0 auto;
         padding: 0 0.5em;
     }
-
     .intro__text p,
     .intro__text h1 {
         text-align: center;
     }
-
     .intro__text h1 {
         font-size: 160%;
     }
-
     .intro__text .button {
         margin: 0 auto;
     }
-
     .featured__content p {
         max-width: 480px;
         padding: 1em;
     }
-
     .featured__img {
         margin: 0 auto;
     }
-
     h2,
     h3 {
         text-align: center;
     }
-
     .contentLeft,
     .contentRight {
         margin: 0 0 1em 0;
     }
-
     .some {
         width: 100%;
     }
-
     /* NAVIGATION MENU */
     nav {
         padding: 0.2em;
         flex-direction: column;
     }
-
     #burger {
         margin-left: 0.2em;
         display: block;
         color: #000;
     }
-
     .menu {
         display: none;
         width: 100vw;
@@ -363,28 +363,22 @@ footer p {
         padding: 0;
         margin-top: 0;
     }
-
     .menu>li {
         padding: 0;
         margin: 1.4em 0;
     }
-
     .menu>li:first-child {
         margin-right: 0;
     }
-
     .menu>li a {
         font-size: 1.8em;
     }
-
     .menu>li img {
         width: 220px;
     }
-
     footer {
         height: auto;
     }
-
     footer p {
         text-align: center;
         font-size: 90%;

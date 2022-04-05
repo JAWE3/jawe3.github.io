@@ -1,4 +1,5 @@
 /* ABONNEMENTSIDER */
+
 .abonnement {
     flex-direction: column;
     width: 50em;
@@ -22,6 +23,7 @@
 .button {
     text-align: center;
 }
+
 
 /* ALLE KNAPPER + modifiers*/
 
@@ -70,7 +72,9 @@
     display: flex;
 }
 
+
 /* the grey cards with subscription types */
+
 .card {
     width: 14.25em;
     padding: 2em 0.8em;
@@ -117,7 +121,9 @@
     margin: 2em 0 0;
 }
 
+
 /* STUDERENDE TILBUD */
+
 .offers {
     margin-top: 1em;
     padding: 1em;
@@ -128,20 +134,19 @@
     margin: 0 0 1em;
 }
 
+
 /* VALGT ABONNEMENT DETALJER */
 
 .form-content {
     display: grid;
-    gap: 1em;
+    gap: 0.8125em;
     width: 33.54em;
     padding: 4em 2em 3em;
-    gap: 0.5em;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .orderform__label {
     text-align: right;
-    margin-top: 0.1em;
 }
 
 .orderform__input {
@@ -150,15 +155,22 @@
     border: none;
 }
 
-.orderform__star {
-    margin-left: 0.5625em;
-    margin-right: 2em;
+i.fa-asterisk {
+    margin: 0 1.5em 0 0.5625em;
+    font-size: 0.625em;
+    vertical-align: middle;
+    color: rgb(160, 40, 40);
 }
 
 .checkbox__label {
     grid-column: 1;
-    text-align: right;
     font-size: 12px;
+    width: 100%;
+}
+
+.checkbox__label i.fa-asterisk {
+    margin-left: 0;
+    margin-right: 0.3em;
 }
 
 .checkbox__input {
@@ -166,16 +178,13 @@
     margin-right: 0.7em;
 }
 
-.checkbox__star {
-    margin-right: 0.7rem;
-    margin-left: 0.2rem;
-}
-
 .checkbox {
     grid-column: 2;
 }
 
+
 /* GRÅ DETALJEBOKS - VALGT ABONNEMENT */
+
 .detaljer {
     margin-left: 2em;
     width: 14.28em;
@@ -226,9 +235,9 @@
     font-weight: 700;
 }
 
-/* fejlbeskeder og røde asterisks */
-.orderform__star,
-.checkbox__star,
+
+/* fejlbeskeder */
+
 .accept_error,
 .fname_error,
 .ename_error,
@@ -238,11 +247,22 @@
 .password_error,
 .passwordconf_error,
 .address_error {
-    color: rgb(160, 40, 40);
     font-size: 0.85em;
     grid-column: 2;
     margin-top: 0;
-    padding-bottom: 0.5em;
+    color: rgb(160, 40, 40);
+}
+
+.accept_error,
+.fname_error,
+.ename_error,
+.phone_error,
+.email_error,
+.emailconf_error,
+.password_error,
+.passwordconf_error,
+.address_error {
+    display: none;
 }
 
 @media only screen and (max-width: 870px) {
@@ -256,14 +276,12 @@
         width: 100%;
         overflow: hidden;
     }
-
     .abonnementer,
     .card,
     .offers,
     .orderform {
         flex-direction: column;
     }
-
     .form-content,
     .detaljer,
     .card__list,
@@ -273,87 +291,68 @@
     .detaljer {
         width: 100%;
     }
-
     .detaljer h2 {
         font-size: 150%;
     }
-
     .detaljer__text,
     .detaljer__price,
     .detaljer__discount,
     .detaljer__total {
         font-size: 110%;
     }
-
     .offers p {
         text-align: center;
     }
-
     .card h2 {
         font-size: 180%;
     }
-
     .card__list {
         margin: 3em auto 2em;
     }
-
     .card__list>li {
         font-size: 1.6em;
     }
-
     .card__terms {
         font-size: 100%;
     }
-
     .card,
     .offers {
         margin: 1em 0;
         padding: 2em 10%;
     }
-
     .offers p {
         font-size: 130%;
     }
-
     .orderform {
         margin-left: 0;
         flex-wrap: wrap;
     }
-
     .orderform p {
         justify-self: end;
     }
-
     .orderform,
     .detaljer {
         margin: 1em 0;
-
     }
-
     .checkbox {
         justify-content: space-between;
         flex-direction: row;
-        margin-bottom: 2em;
+        margin-bottom: 1em;
         grid-column: span 2;
     }
-
     .checkbox__input {
         width: 16px;
+        align-self: center;
     }
-
     .checkbox__label {
-        width: 92%;
         font-size: 100%;
         text-align: left;
     }
-
-
     .orderform__input {
         width: 100%;
         padding: 0.7em;
         border-radius: 7px
     }
-
     .orderform__label,
     .orderform__input,
     .checkbox__input {
@@ -361,7 +360,6 @@
         font-size: 110%;
         text-align: left;
     }
-
     .button,
     .button--form,
     .button--offer {
@@ -371,7 +369,6 @@
         font-weight: 400;
         padding: 0.6em 0;
     }
-
     .button--right {
         margin: 1em auto;
     }

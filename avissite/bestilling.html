@@ -6,11 +6,8 @@
     <title>iKøbenhavn - Abonnementer - Avis - MG Website Projekt - Webudvikler 2020</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/global.css">
-	<link rel="stylesheet" href="css/subscription.css">
-	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-	<script src="js/menu.js" defer></script>
-	<script src="js/subscription.js" defer></script>
-    <script src="js/validation.js" defer></script>
+    <link rel="stylesheet" href="css/subscription.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 
 <body id="subscription">
@@ -32,8 +29,7 @@
                     <li><a href="sport.html" title="Netavisen iKøbenhavn - Sport">sport</a></li>
                     <li><a href="kultur.html" title="Netavisen iKøbenhavn - Kultur">kultur</a></li>
                     <li><a href="#" title="Netavisen iKøbenhavn - Begivenheder">begivenheder</a></li>
-                    <li><a class="active" href="abonnement.html"
-                            title="Netavisen iKøbenhavn - Abonnement">abonnement</a></li>
+                    <li><a class="active" href="abonnement.html" title="Netavisen iKøbenhavn - Abonnement">abonnement</a></li>
                 </ul>
             </nav>
         </header>
@@ -45,37 +41,35 @@
                     <div class="greybg">
                         <div class="form-content">
                             <label class="orderform__label" for="email">Indtast din email<i
-                                    class="fas fa-asterisk orderform__star"></i></label>
-                            <input class="orderform__input" type="email" id="email"
-                                title="Din email skal indeholde bogstaver - @ - bogstaver - . - bogstaver (test@mail.dk)">
+                                    class="fas fa-asterisk"></i></label>
+                            <input class="orderform__input" type="email" id="email" title="Din email skal indeholde bogstaver - @ - bogstaver - . - bogstaver (test@mail.dk)">
                             <p class="email_error"></p>
                             <label class="orderform__label" for="emailconf">Bekræft din email<i
-                                    class="fas fa-asterisk orderform__star"></i></label>
+                                    class="fas fa-asterisk"></i></label>
                             <input class="orderform__input" type="email" id="emailconf">
                             <p class="emailconf_error"></p>
                             <label class="orderform__label" for="password">Vælg adgangskode<i
-                                    class="fas fa-asterisk orderform__star"></i></label>
-                            <input class="orderform__input" type="password" id="password"
-                                title="Mindst 8 tegn, heraf minimum ét stort bogstav, ét lille bogstav, ét tal og ét specialtegn fx @ eller #">
+                                    class="fas fa-asterisk"></i></label>
+                            <input class="orderform__input" type="password" id="password" title="Mindst 8 tegn, heraf minimum ét stort bogstav, ét lille bogstav, ét tal og ét specialtegn fx @ eller #">
                             <p class="password_error"></p>
                             <label class="orderform__label" for="passwordconf">Bekræft koden<i
-                                    class="fas fa-asterisk orderform__star"></i></label>
+                                    class="fas fa-asterisk"></i></label>
                             <input class="orderform__input" type="password" id="passwordconf">
                             <p class="passwordconf_error"></p>
                             <label class="orderform__label" for="fname">Fornavn<i
-                                    class="fas fa-asterisk orderform__star"></i></label>
+                                    class="fas fa-asterisk"></i></label>
                             <input class="orderform__input" type="text" id="fname">
                             <p class="fname_error"></p>
                             <label class="orderform__label" for="ename">Efternavn<i
-                                    class="fas fa-asterisk orderform__star"></i></label>
+                                    class="fas fa-asterisk"></i></label>
                             <input class="orderform__input" type="text" id="ename">
                             <p class="ename_error"></p>
                             <label class="orderform__label" for="phone">Telefon<i
-                                    class="fas fa-asterisk orderform__star"></i></label>
+                                    class="fas fa-asterisk"></i></label>
                             <input class="orderform__input" type="tel" id="phone">
                             <p class="phone_error"></p>
                             <label class="orderform__label" for="address">Adresse<i
-                                    class="fas fa-asterisk orderform__star"></i></label>
+                                    class="fas fa-asterisk"></i></label>
                             <input class="orderform__input" type="text" id="address">
                             <p class="address_error"></p>
                             <span class="checkbox">
@@ -89,14 +83,15 @@
                             </span>
                             <span class="checkbox">
                                 <input class="checkbox__input" type="checkbox" id="accept">
-                                <label class="checkbox__label" for="accept"><i
-                                        class="fas fa-asterisk checkbox__star"></i>Jeg
+                                <label class="checkbox__label" for="accept">Jeg
                                     accepterer vilkår for
-                                    tilmelding</label>
+                                    tilmelding <i class="fas fa-asterisk"></i></label>
                                 <p class="accept_error"></p>
                             </span>
-                        </div><!-- orderform -->
-                    </div><!-- greybg -->
+                        </div>
+                        <!-- orderform -->
+                    </div>
+                    <!-- greybg -->
                     <div class="detaljer">
                         <section class="detaljer__content greybg">
                             <h2 id="abonnement-heading"></h2>
@@ -104,12 +99,13 @@
                             <p class="detaljer__price">Normalpris <span id="abonnement-pris"></span></p>
                             <p class="detaljer__discount">Rabat <span id="abonnement-rabat"></span></p>
                             <p class="detaljer__total">Pris i alt <span id="abonnement-total"></span></p>
-                            <p class="detaljer__terms">Tilbuddet gælder kun for husstande i Danmark, der ikke
-                                har abonneret inden for de sidste 12 måneder.</p>
+                            <p class="detaljer__terms">Tilbuddet gælder kun for husstande i Danmark, der ikke har abonneret inden for de sidste 12 måneder.</p>
                         </section>
                         <input class="button button--form button--right" type="submit" value="Bestil">
-                    </div><!-- detaljer -->
-                </form><!-- bestillingsform -->
+                    </div>
+                    <!-- detaljer -->
+                </form>
+                <!-- bestillingsform -->
                 <div class="offers greybg">
                     <p>Har du spørgsmål angående abonnement?</p>
                     <a href="#questions" class="button button--offer button--center" id="ask">Skriv til os</a>
@@ -119,11 +115,9 @@
             <!-- abonnement -->
         </main>
         <footer>
-            <p>iKøbenhavn | Københavnvej 151 | 2300 København S | Tlf. 30 55 30 44 |
-                ikøbenhavn@mail.dk</p>
-            <p>Åbningstider:<br>
-                Mandag: 9.00-17.00 | Tirsdag 9.00-14.00 | Onsdag: 10.00-14.00 | Torsdag: 10.00-14.00 |<br>
-                Fredag, lørdag, søndag: Lukket</p>
+            <p>iKøbenhavn | Københavnvej 151 | 2300 København S | Tlf. 30 55 30 44 | ikøbenhavn@mail.dk
+            </p>
+            <p>Åbningstider:<br> Mandag: 9.00-17.00 | Tirsdag 9.00-14.00 | Onsdag: 10.00-14.00 | Torsdag: 10.00-14.00 |<br> Fredag, lørdag, søndag: Lukket</p>
             <p>"Dette er en skoleopgave lavet på Next Uddannelse København/Medie"</p>
         </footer>
     </div>
@@ -151,6 +145,9 @@
         const totalText = document.querySelector("#abonnement-total");
         totalText.textContent = price - discount + ",00";
     </script>
+    <script src="js/menu.js"></script>
+    <script src="js/subscription.js"></script>
+    <script src="js/validation.js"></script>
 </body>
 
 </html>

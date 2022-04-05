@@ -179,7 +179,7 @@ ul.pdfList {
 }
 
 ul.pdfList li {
-    margin: 1em 0;
+    margin-top: 1em;
 }
 
 ul.pdfList li ul {

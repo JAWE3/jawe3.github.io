@@ -237,10 +237,13 @@
                 <li><a href="https://www.linkedin.com/in/webudvikler-faglaerer/" target="_blank" title="Jens Andersen LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </li>
             </ul>
-            <p>Copyright &copy; 2021 - All Rights Reserved</p>
+            <p>Copyright &copy; <span class="year"></span> - All Rights Reserved</p>
         </footer>
     </div>
-
+    <script>
+        const year = new Date().getFullYear();
+        document.querySelector('.year').innerHTML = year;
+    </script>
 </body>
 
 </html>

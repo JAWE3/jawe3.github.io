@@ -1,0 +1,49 @@
+/* all lightbox css settings */
+
+#lightbox {
+    background-color: rgba(0, 0, 0, 1);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+}
+
+#lightbox_content {
+    background-color: #000;
+    max-width: 66vw;
+    margin: 15vh auto;
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(3, auto);
+}
+
+#photo {
+    grid-area: 1/1/2/-1;
+    padding: 0.8em 0.8em 0;
+}
+
+#next,
+#back {
+    grid-area: 1/1/2/-1;
+    font-size: 2.5em;
+    color: rgba(255, 255, 255, 0.8);
+    align-self: center;
+}
+
+#next {
+    justify-self: end;
+    margin-right: 1em;
+}
+
+#back {
+    justify-self: start;
+    margin-left: 1em;
+}
+
+p#caption {
+    grid-area: 2/1/3/-1;
+    text-align: center;
+    padding: 0.5em 0;
+    display: block;
+}

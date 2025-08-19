@@ -1,4 +1,4 @@
 # jawe3.github.io
 Presentation website
-Jens Andersern Webudvikler
+Jens Andersen Webudvikler og Faglærer
 Test websites in subfolders
